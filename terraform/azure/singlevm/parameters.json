@@ -1,0 +1,148 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "value": "azueruser"
+        },
+        "adminPassword": {
+            "value": ""
+        },
+        "fortiGateNamePrefix": {
+            "value": "cat"
+        },
+        "fortiGateName": {
+            "value": "cat-fgt"
+        },
+        "fortiGateImageSKU_x64": {
+            "value": "fortinet_fg-vm_payg_2023"
+        },
+        "fortiGateImageSKU_x64_g2": {
+            "value": "fortinet_fg-vm_g2"
+        },
+        "fortiGateImageSKU_arm64": {
+            "value": "fortinet_fg-vm_arm64"
+        },
+        "fortiGateInstanceArchitecture": {
+            "value": "x64"
+        },
+        "fortiGateImageVersion_x64": {
+            "value": "latest"
+        },
+        "fortiGateImageVersion_x64_g2": {
+            "value": "7.6.200"
+        },
+        "fortiGateImageVersion_arm64": {
+            "value": "7.6.2"
+        },
+        "fortiGateAdditionalCustomData": {
+            "value": ""
+        },
+        "instanceType_x64": {
+            "value": "Standard_F2s"
+        },
+        "instanceType_x64_g2": {
+            "value": "Standard_D2s_v6"
+        },
+        "instanceType_arm64": {
+            "value": "Standard_D2ps_v6"
+        },
+        "availabilityOptions": {
+            "value": "None"
+        },
+        "existingAvailabilitySetName": {
+            "value": ""
+        },
+        "availabilityZoneNumber": {
+            "value": ""
+        },
+        "acceleratedNetworking": {
+            "value": "false"
+        },
+        "acceleratedConnections": {
+            "value": false
+        },
+        "acceleratedConnectionsSku": {
+            "value": "A1"
+        },
+        "publicIP1NewOrExisting": {
+            "value": "new"
+        },
+        "publicIP1Name": {
+            "value": "cat-fgt-pip"
+        },
+        "publicIP1ResourceGroup": {
+            "value": "flex11-flex105-workshop"
+        },
+        "vnetNewOrExisting": {
+            "value": "new"
+        },
+        "vnetName": {
+            "value": "cat-vnet"
+        },
+        "vnetResourceGroup": {
+            "value": "flex11-flex105-workshop"
+        },
+        "vnetAddressPrefix": {
+            "value": "172.16.8.0/22"
+        },
+        "subnet1Name": {
+            "value": "externalsubnet"
+        },
+        "subnet1Prefix": {
+            "value": "172.16.8.0/26"
+        },
+        "subnet1StartAddress": {
+            "value": "172.16.8.4"
+        },
+        "subnet2Name": {
+            "value": "internalsubnet"
+        },
+        "subnet2Prefix": {
+            "value": "172.16.8.64/26"
+        },
+        "subnet2StartAddress": {
+            "value": "172.16.8.68"
+        },
+        "subnet3Name": {
+            "value": "protectedsubnet"
+        },
+        "subnet3Prefix": {
+            "value": "172.16.9.0/24"
+        },
+        "serialConsole": {
+            "value": "yes"
+        },
+        "fortiManager": {
+            "value": "no"
+        },
+        "fortiManagerIP": {
+            "value": ""
+        },
+        "fortiManagerSerial": {
+            "value": ""
+        },
+        "fortiGateLicenseBYOL": {
+            "value": ""
+        },
+        "fortiGateLicenseFortiFlex": {
+            "value": ""
+        },
+        "customImageReference": {
+            "value": ""
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "tagsByResource": {
+            "value": {}
+        },
+        "fortinetTags": {
+            "value": {
+                "publisher": "Fortinet",
+                "template": "Catalog-Single-VM",
+                "provider": "FortiFlex-Catalog"
+            }
+        }
+    }
+}
