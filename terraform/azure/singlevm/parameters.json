@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "adminUsername": {
-            "value": "azueruser"
+            "value": null
         },
         "adminPassword": {
-            "value": ""
+            "value": null
         },
         "fortiGateNamePrefix": {
             "value": "cat"
@@ -15,7 +15,7 @@
             "value": "cat-fgt"
         },
         "fortiGateImageSKU_x64": {
-            "value": "fortinet_fg-vm_payg_2023"
+            "value": "fortinet_fg-vm"
         },
         "fortiGateImageSKU_x64_g2": {
             "value": "fortinet_fg-vm_g2"
@@ -72,7 +72,7 @@
             "value": "cat-fgt-pip"
         },
         "publicIP1ResourceGroup": {
-            "value": "flex11-flex105-workshop"
+            "value": null
         },
         "vnetNewOrExisting": {
             "value": "new"
@@ -81,7 +81,7 @@
             "value": "cat-vnet"
         },
         "vnetResourceGroup": {
-            "value": "flex11-flex105-workshop"
+            "value": null
         },
         "vnetAddressPrefix": {
             "value": "172.16.8.0/22"
